@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { WishlistContext } from "../providers/WishListProvider";
-import { MdClose } from "react-icons/md";
+import { MdDeleteForever } from "react-icons/md";
 import styles from "./styles.module.css";
 
 const Wishlist = () => {
@@ -36,12 +36,14 @@ const Wishlist = () => {
               alt={book.title}
               style={{ marginRight: "10px" }}
             />
-            <div>
+            <div
+             className={styles.wishlistContent}
+            >
               <h2>{book.title}</h2>
               <p>Author: {book.author}</p>
-              <MdClose
+              <MdDeleteForever
                 onClick={() => removeFromWishlist(book.id)}
-                style={{ cursor: "pointer", fontSize: "24px" }}
+                 className={styles.deleteIcon}
               />
             </div>
           </div>

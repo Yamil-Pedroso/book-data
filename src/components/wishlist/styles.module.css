@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    gap: 1rem;
 
 .wishlistItem {
     display: flex;
@@ -11,13 +12,35 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 20px;
-
+    
     img {
-        width: 200px;
-        height: 200px;
+        width: 12.5rem;
+        height: 12.5rem;
         object-fit: cover;
         border-radius: 10px;
     }
+
+    div {
+        h2 {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #82a58e;
+        }
+    }
 }
+
+   .wishlistContent {
+     .deleteIcon {
+        cursor: pointer;
+        color: #9d9d9d;
+        font-size: 1.5rem;
+        margin-top: 10px;
+        transition: color 0.3s;
+        &:hover {
+            color: #f00;
+        }
+    }
+   }
 }
 
