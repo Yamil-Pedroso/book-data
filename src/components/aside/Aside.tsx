@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 interface AsideProps {
   onClick: (language: string) => void
   language: string
@@ -34,6 +34,17 @@ const Aside = ({
             {lang}
           </button>
         ))}
+
+        <Link to="/wishlist">
+          <button
+            style={{
+              backgroundColor: '#82a58e',
+              color: '#2a2a2a',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+            }}
+          >Wishlist</button>
+        </Link>
       </div>
     </aside>
   )

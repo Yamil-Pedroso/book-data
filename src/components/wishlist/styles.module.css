@@ -1,0 +1,23 @@
+
+.wishlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+.wishlistItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+}
+

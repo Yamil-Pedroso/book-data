@@ -31,9 +31,9 @@
     justify-content: center;
     margin: .5rem;
     padding: .5rem 2rem;
-    background-color: #2a2a2a;
+    background-color: #fff;
     position: absolute;
-    color: #82a58e;
+    color: #2a2a2a;
     top: 50%;
     left: 50%;
     border-radius: .3rem;
@@ -44,6 +44,7 @@
 
     p {
       margin: .5rem;
+      font-weight: bold;
     }
   }
 
@@ -93,6 +94,10 @@
       display: block;
       animation: jumpCardContentAppearSmoothly .5s;
     }
+  }
+
+  .active {
+    color: #82a58e;
   }
 
   @keyframes presentCardBackToFront {
