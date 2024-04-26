@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import books, { BookProps } from '../../data/books'
+import { BookProps } from '../../data/books'
 import { motion } from 'framer-motion'
 import {
   FaArrowLeft,
@@ -10,21 +10,26 @@ import {
   FaBook,
 } from 'react-icons/fa'
 import Search from '../search/Search'
-import Aside from '../aside/Aside'
 import styles from './styles.module.css'
+
+interface BooksProps {
+  books: BookProps[];
+}
 
 const limitBooks = 6
 
-const Books = () => {
+const Books = ({ books }: BooksProps) => {
   const [myBooks, setMyBooks] = useState<BookProps[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [search, setSearch] = useState('')
+  const [filteredBooks, setFilteredBooks] = useState<BookProps[]>(books);
   const [shareOptions, setShareOptions] = useState({
     show: false,
     index: null,
   })
   const [cardContentShow, setCardContentShow] = useState<number | null>(null)
-  const [showBookTooltip, setShowBookTooltip] = useState<number | null>(null)
+  //const [showBookTooltip, setShowBookTooltip] = useState<number | null>(null)
+
 
   const onOverCardContent = (index: number) => {
     setCardContentShow(index)
@@ -34,13 +39,13 @@ const Books = () => {
     setCardContentShow(null)
   }
 
-  // Función ajustada para manejar clic en el ícono de compartir
   const handleClick = (index: any) => {
     setShareOptions((prev) => ({
-      show: !prev.show && prev.index === index,
-      index,
-    }))
-  }
+      show: prev.index !== index ? true : !prev.show,
+      index: index,
+    }));
+  };
+  
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value)
@@ -55,35 +60,52 @@ const Books = () => {
   }
 
   useEffect(() => {
-    setMyBooks(books)
-  }, [])
+    const searchLower = search.toLowerCase();
+    const filtered = books.filter(book =>
+      book.title.toLowerCase().includes(searchLower)
+    );
+    setFilteredBooks(filtered);
+  }, [books, search]);
 
-  const next = () => {
-    const newStart = currentIndex + limitBooks
-    if (newStart < myBooks.length) {
-      setCurrentIndex(newStart)
-    } else if (newStart === myBooks.length - 1) {
-      setCurrentIndex(newStart)
+  useEffect(() => {
+    if (filteredBooks.length <= currentIndex && currentIndex !== 0) {
+        setCurrentIndex(0);
     }
-  }
+}, [filteredBooks]);
 
-  const back = () => {
-    const newStart = currentIndex - limitBooks
-    if (newStart >= 0) {
-      setCurrentIndex(newStart)
-    }
+
+const next = () => {
+  const newStart = currentIndex + limitBooks;
+  if (newStart < filteredBooks.length) {
+      setCurrentIndex(newStart);
   }
+};
+
+const back = () => {
+  const newStart = currentIndex - limitBooks;
+  if (newStart >= 0) {
+      setCurrentIndex(newStart);
+  } else {
+      setCurrentIndex(0); 
+  }
+};
+
 
   const shareBookViaWhatsApp = (book: any) => {
-    const shareText = `Mira este libro: "${book.title}" de ${book.author}. ¡Es muy interesante! ${book.image}`
+    const shareText = `Look at this book:
+    "${book.title}" de ${book.author}. Is very interesting.
+    ${book.image}`
     const whatsappURL = `https://wa.me/?text=${encodeURIComponent(shareText)}`
     window.open(whatsappURL, '_blank')
   }
 
   const shareBookViaGmail = (book: any) => {
-    const subject = encodeURIComponent(`Libro recomendado: ${book.title}`)
+    const subject = encodeURIComponent(`Recommendation:
+    ${book.title}`)
     const body = encodeURIComponent(
-      `Hola,\n\nQuiero recomendarte este libro: "${book.title}" de ${book.author}.\n\nPuedes ver más sobre el libro aquí: ${book.imageURL}\n\nSaludos,`,
+      `Hi,\n\nLook at this book :):
+      "${book.title}" de ${book.author}.\n\nYou can find more information about this book here:
+      ${book.imageURL}\n\nBest regards.`,
     )
     const gmailURL = `mailto:?subject=${subject}&body=${body}`
     window.open(gmailURL, '_blank')
@@ -112,7 +134,6 @@ const Books = () => {
 
   return (
     <div>
-      <Aside />
       <Search mySearch={search} handleChange={handleChange} />
       <div
         style={{
@@ -144,11 +165,11 @@ const Books = () => {
           width: '100%',
         }}
       >
-        {myBooks
+        {filteredBooks
           .slice(currentIndex, currentIndex + limitBooks)
           .map((book, index) => (
             <div key={book.id} className="book-card">
-              <div
+              {/*<div
                 className={`${styles.cardContent}
                       ${cardContentShow === index ? styles.show : ''}
                       `}
@@ -157,7 +178,7 @@ const Books = () => {
                   <p>Description: </p>
                   <span>{book.description}</span>
                 </div>
-              </div>
+          </div>*/}
               <div className={styles.card}>
                 <Link to={`/book-details/${book.id}`}>
                   <img

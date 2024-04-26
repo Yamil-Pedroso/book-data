@@ -58,6 +58,7 @@ aside {
     display: flex;
     flex-direction: column;
 
+
     button {
       margin-bottom: .5rem;
       color:  #82a58e;
@@ -67,6 +68,7 @@ aside {
       focus: none;
       border-bottom: 1px solid transparent;
 
+      
       &:focus {
         outline: none;
       }
@@ -123,4 +125,8 @@ aside {
       color: #82a58e;
     }
   }
+}
+
+.language-btn .active {
+  background: blue;
 }

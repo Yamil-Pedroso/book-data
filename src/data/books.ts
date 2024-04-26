@@ -36,7 +36,7 @@ const books: BookProps[] = [
     image: "https://m.media-amazon.com/images/I/A1eEFlU1ftL._AC_UF1000,1000_QL80_.jpg",
     year: 2001,
     pages: 128,
-    language: "English"
+    language: "Italiano"
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const books: BookProps[] = [
     image: "https://joshzandman.com/cdn/shop/files/GatsbyCover_08c4c8ed-ec19-40be-ae3e-c61ce3abe96e.png?v=1686709923",
     year: 1925,
     pages: 180,
-    language: "English"
+    language: "Italian"
   },
   {
     id: 4,
@@ -76,7 +76,7 @@ const books: BookProps[] = [
     image: "https://m.media-amazon.com/images/I/517Hf-iPmnL.jpg",
     year: 1927,
     pages: 209,
-    language: "English"
+    language: "Español"
   },
   {
     id: 7,
@@ -156,7 +156,7 @@ const books: BookProps[] = [
     image: "https://m.media-amazon.com/images/I/61v+KUMd4JL._SL500_.jpg",
     year: 1818,
     pages: 280,
-    language: "English"
+    language: "Deutsch"
   },
   {
     id: 15,
@@ -196,7 +196,7 @@ const books: BookProps[] = [
     image: "https://covers.shakespeareandcompany.com/97813988/9781398824515.jpg",
     year: 1818,
     pages: 280,
-    language: "English"
+    language: "Français"
   }
 ];
 

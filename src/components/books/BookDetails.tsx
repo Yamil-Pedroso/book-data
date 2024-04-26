@@ -1,8 +1,13 @@
-import { useParams } from 'react-router-dom'
+
+import { useParams, Link } from 'react-router-dom'
 import books, { BookProps } from '../../data/books'
 import styles from './styles.module.css'
 
-const BookDetails = () => {
+
+
+const BookDetails = (
+
+) => {
   const { id } = useParams() as { id: string }
 
   const book = books.find((book: BookProps) => book.id === parseInt(id))
@@ -10,6 +15,14 @@ const BookDetails = () => {
 
   return (
     <div className={styles.container}>
+      <Link to="/">
+        <span
+         style={{
+            color: '#82a58e'
+          }}
+        >
+          Back to books
+          </span></Link>
       <div className={styles.imgWrapper}>
         <img src={image} alt={title} />
       </div>
