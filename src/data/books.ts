@@ -30,23 +30,23 @@ const books: BookProps[] = [
   },
   {
     id: 2,
-    title: "Fantastic Beasts",
-    description: "Fantastic Beasts and Where to Find Them (often referred to as simply Fantastic Beasts) is a 2001 guide book written by British author J. K. Rowling (under the pen name of the fictitious author Newt Scamander) about the magical creatures in the Harry Potter universe.",
+    title: "Animali fantastici e dove trovarli",
+    description: "Bestie fantastiche e dove trovarle (spesso indicato come semplicemente Bestie fantastiche) è un libro-guida del 2001 scritto dall'autrice britannica J. K. Rowling (con lo pseudonimo dell'autore fittizio Newt Scamander) sulle creature magiche dell'universo di Harry Potter.",
     author: "Newt Scamander",
-    image: "https://m.media-amazon.com/images/I/A1eEFlU1ftL._AC_UF1000,1000_QL80_.jpg",
+    image: "https://www.lafeltrinelli.it/images/9788893811613_0_536_0_75.jpg",
     year: 2001,
     pages: 128,
     language: "Italiano"
   },
   {
     id: 3,
-    title: "The Great Gatsby",
-    description: "The Great Gatsby is a 1974 American historical romantic drama film based on the 1925 novel of the same name by F. Scott Fitzgerald. The film was directed by Jack Clayton, produced by David Merrick, and written by Francis Ford Coppola.",
+    title: "Il Grande Gatsby",
+    description: "Il grande Gatsby è un romanzo del 1925 dello scrittore americano F. Scott Fitzgerald.Ambientato nell'Età del Jazz a Long Island, vicino a New York, il romanzo descrive le interazioni del narratore in prima persona Nick Carraway con il misterioso milionario Jay Gatsby e l'ossessione di Gatsby di ricongiungersi con la sua ex amante, Daisy Buchanan.",
     author: "F. Scott Fitzgerald",
-    image: "https://joshzandman.com/cdn/shop/files/GatsbyCover_08c4c8ed-ec19-40be-ae3e-c61ce3abe96e.png?v=1686709923",
+    image: "https://www.deagostinilibri.it/uploads/2016/06/9791221201413.jpg",
     year: 1925,
     pages: 180,
-    language: "Italian"
+    language: "Italiano"
   },
   {
     id: 4,
@@ -70,10 +70,10 @@ const books: BookProps[] = [
   },
   {
     id: 6,
-    title: "To the Lighthouse",
-    description: "Following and extending the tradition of modernist novelists like Marcel Proust and James Joyce, the plot of To the Lighthouse is secondary to its philosophical introspection. Cited as a key example of the literary technique of multiple focalization, the novel includes little dialogue and almost no direct action; most of it is written as thoughts and observations.",
+    title: "Al faro",
+    description: "Al faro es una novela de 1927 escrita por Virginia Woolf. La novela se centra en la familia Ramsay y sus visitas a la isla de Skye, en Escocia, entre 1910 y 1920.",
     author: "Virginia Woolf",
-    image: "https://m.media-amazon.com/images/I/517Hf-iPmnL.jpg",
+    image: "https://m.media-amazon.com/images/I/41X0vyEW5MS.jpg",
     year: 1927,
     pages: 209,
     language: "Español"
@@ -100,13 +100,13 @@ const books: BookProps[] = [
   },
   {
     id: 9,
-    title: "The Hobbit",
-    description: "The Hobbit, or There and Back Again is a children's fantasy novel by the English author J. R. R. Tolkien. It was published in 1937 to wide critical acclaim, being nominated for the Carnegie Medal and awarded a prize from the New York Herald Tribune for best juvenile fiction. The book is recognized as a classic in children's literature and is one of the best-selling books of all time, with over 100 million copies sold.",
+    title: "El Hobbit",
+    description: "El Hobbit o ida y vuelta es una novela fantástica infantil del escritor inglés J. R. R. Tolkien. Fue publicada en 1937 con gran éxito de crítica, siendo nominada para la Medalla Carnegie y galardonada con un premio del New York Herald Tribune a la mejor ficción juvenil. El libro está reconocido como un clásico de la literatura infantil y es uno de los más vendidos de todos los tiempos, con más de 100 millones de ejemplares vendidos.",
     author: "J.R.R. Tolkien",
-    image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b2fb0fb7-3668-4e9b-b13b-304ee5e04e55/d8mezqk-a6f65784-2e1a-46f9-936c-4d41284dc5b0.jpg/v1/fill/w_1024,h_1317,q_75,strp/the_hobbit_book_cover_by_dreams_design_d8mezqk-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMxNyIsInBhdGgiOiJcL2ZcL2IyZmIwZmI3LTM2NjgtNGU5Yi1iMTNiLTMwNGVlNWUwNGU1NVwvZDhtZXpxay1hNmY2NTc4NC0yZTFhLTQ2ZjktOTM2Yy00ZDQxMjg0ZGM1YjAuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.LyqHU_PtNmqOQ2LmmpwkhMvNAgkaSDlHmPZG0cBNPUA",
+    image: "https://images.cdn3.buscalibre.com/fit-in/360x360/aa/e7/aae7c78b448cce18accecef9e7b5dc6d.jpg",
     year: 1937,
     pages: 310,
-    language: "English"
+    language: "Español"
   },
   {
     id: 10,
@@ -120,13 +120,13 @@ const books: BookProps[] = [
   },
   {
     id: 11,
-    title: "The lord of the rings",
-    description: "The Lord of the Rings is an epic[1] high fantasy novel[a] by the English author and scholar J. R. R. Tolkien. Set in Middle-earth, the story began as a sequel to Tolkien's 1937 children's book The Hobbit, but eventually developed into a much larger work. Written in stages between 1937 and 1949, The Lord of the Rings is one of the best-selling books ever written, with over 150 million copies sold.",
+    title: "Le seigneur des anneaux",
+    description: "Le Seigneur des anneaux (The Lord of the Rings) est un roman en trois volumes de J. R. R. Tolkien paru en 1954 et 1955. L'histoire reprend certains personnages du Hobbit, bien que l'œuvre soit plus sombre et plus complexe que ce dernier livre. Elle se situe dans un monde imaginaire appelé la Terre du Milieu, qui est le cadre de la plupart des œuvres de Tolkien.",
     author: "Tolkien",
-    image: "https://mrbsemporium.com/wp-content/uploads/2021/09/9780261103252.jpg",
+    image: "https://media.groupe.gallimard.fr/couvHD/J02275.jpg",
     year: 1818,
     pages: 280,
-    language: "English"
+    language: "Français"
   },
   {
     id: 12,
@@ -140,7 +140,7 @@ const books: BookProps[] = [
   },
   {
     id: 13,
-    title: "Season of the Bruja",
+    title: "Temporada de la bruja",
     description: "Aaron has lived in Portland, OR for over 20 years, but spent his childhood in the desolate high desert of Northern California. He’s worn many hats over the years, going from film production to radio host, writing has always been his love. In addition to his young adult novels, Aaron has written stories for Dark Horse Comics, Image Comics, and Activision. When he’s not at his keyboard, he’s in the kitchen experimenting with traditional Mexican ingredients to rediscover lost dishes.",
     author: "Bruja",
     image: "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781549308161/season-of-the-bruja-vol-1-9781549308161_hr.jpg",
@@ -171,19 +171,19 @@ const books: BookProps[] = [
   {
     id: 16,
     title: "Macbeth",
-    description: "Macbeth (/məkˈbɛθ/, full title The Tragedie of Macbeth) is a tragedy by William Shakespeare. It is thought to have been first performed in 1606.[a] It dramatises the damaging physical and psychological effects of political ambition on those who seek power.",
+    description: "Macbeth ist eine Tragödie von William Shakespeare. Sie ist eines seiner kürzesten erhaltenen Werke und entstand vermutlich um 1606. Die Handlung spielt in Schottland; Hauptfigur ist der Heerführer Macbeth. Die Tragödie gehört zu den bekanntesten Werken Shakespeares und ist häufig Gegenstand von Aufführungen und Neuinterpretationen.",
     author: "Shakespeare",
-    image: "https://52lettersinthealphabet.files.wordpress.com/2014/12/cover-macbeth.jpg",
+    image: "https://images.thalia.media/07/-/6cabf2ee50664392a7b03963c1b6d450/macbeth-shakespeare-zweisprachig-englisch-deutsch-taschenbuch-william-shakespeare.jpeg",
     year: 1818,
     pages: 280,
-    language: "English"
+    language: "Deutsch"
   },
   {
     id: 17,
-    title: "The odyssey of Homer",
-    description: "The Odyssey (/ˈɒdɪsi/;[1] Ancient Greek: Ὀδύσσεια, romanized: Odýsseia)[2][3] is one of two major ancient Greek epic poems attributed to Homer. It is one of the oldest extant works of literature still widely read by modern audiences. As with the Iliad, the poem is divided into 24 books.",
-    author: "Frederico Lourenço",
-    image: "https://img.wook.pt/images/a-odisseia-de-homero-adaptada-para-jovens-frederico-lourenco/MXwyMTQwMDY3M3wxNzI3NTM0MHwxNTI2MzA4OTMzMDAw/500x",
+    title: "La odisea de Homero",
+    description: "La Odisea es un poema épico griego compuesto por 24 cantos, atribuido al poeta griego Homero. Se cree que fue compuesta en el siglo VIII a. C., en los asentamientos que Grecia tenía en Asia Menor, islas del mar Egeo y en la Magna Grecia. La Odisea es, junto a la Ilíada, una de las dos obras capitales de la antigua literatura griega.",
+    author: "Homero",
+    image: "https://www.isliada.org/static/images/2017/10/la-odisea-homero.jpg",
     year: 1818,
     pages: 280,
     language: "Español"
